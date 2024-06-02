@@ -4,4 +4,4 @@ A simple static webpage as a gift for my girlfriend . Although a personal projec
 You can check this out with 
 
 <br>
-Link: https://ritvikbhatia.github.io/LoveProject
+link:https://github.com/Saishsajib09/LoveProject.git
