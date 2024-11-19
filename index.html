@@ -4,35 +4,24 @@
 <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>This one is for my Sunshine</title>
-
 <style type="text/css">
 @font-face
  {
 font-family: digit;
 src: url('digital-7_mono.ttf') format("truetype");
 }
-
-button {
-font-size: 18px;
-margin: 10px;
-padding: 10px 20px;
-cursor: pointer;
-}
 </style>
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
-
 </head>
-
 <body>
-
 <div id="mainDiv">
 <div id="content">
 <div id="code">
-<span class="comments">/**</span><br />
-<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+<span class="comments">/*</span><br />
+<span class="space"/><span class="comments">THE CODE OF LOVE</span><br />
 <span class="space"/><span class="comments">*/</span><br />
 Hey!<br />
 I remember the first time we spoke on the phone.<br />
@@ -60,26 +49,25 @@ Do you want to go on this journey with me?;<br />
 <br>
 Will you be my girlfriend, Tofunmi? <br />
 <br>
-<div id="buttons">
-<button id="yesButton">Yes</button>
-<button id="noButton">No</button>
-</div>
-<span id="finalMessage" style="display:none; font-size: 20px; color: green;">
-To a life of sunshine and roses FOREVER! I LOVE YOU SO MUCH! - David Grey
-</span>
-<span id="heartspan" style="display: none;">
+<span id="heartspan">
 <a href="IMG_2887 2 (1).jpg"><i class="fas fa-heart" id="icon"></i></a>
 </span>
 </div>
 <div id="loveHeart">
 <canvas id="garden"></canvas>
 <div id="words">
-<div id="messages"></div>
+<div id="messages">
+To a life of sunshine and roses FOREVER
+<div id="elapseClock"></div>
+</div>
+<div id="loveu">
+I LOVE YOU SO MUCH<br/>
+<div class="signature">- David Grey</div>
 </div>
 </div>
 </div>
 </div>
-
+</div>
 <script type="text/javascript">
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -89,7 +77,6 @@ together.setHours(16);
 together.setMinutes(30);
 together.setSeconds(0);
 together.setMilliseconds(0);
-
 if (!document.createElement('canvas').getContext) {
 var msg = document.createElement("div");
 msg.id = "errorMsg";
@@ -103,26 +90,13 @@ document.execCommand("stop");
 setTimeout(function () {
 startHeartAnimation();
 }, 5000);
-
 timeElapse(together);
 setInterval(function () {
 timeElapse(together);
 }, 500);
-
 adjustCodePosition();
 $("#code").typewriter();
 }
-
-// Yes/No button functionality
-document.getElementById("yesButton").addEventListener("click", function() {
-document.getElementById("finalMessage").style.display = "block";
-document.getElementById("heartspan").style.display = "block";
-document.getElementById("buttons").style.display = "none";
-});
-
-document.getElementById("noButton").addEventListener("click", function() {
-alert("Oh no! I really hoped this day will never come. But I love you, still. ❤️");
-});
 </script>
 </body>
 </html>
