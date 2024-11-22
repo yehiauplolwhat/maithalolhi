@@ -16,7 +16,7 @@
     }
 
     #choices button {
-      background-color: #ff6f61;  /* Red button */
+      background-color: #ff6f61;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -27,6 +27,40 @@
     }
 
     #choices button:hover {
+      background-color: #e65a4f;
+    }
+
+    #commentSection {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    #commentSection h3 {
+      font-size: 24px;
+      color: #ff6f61;
+    }
+
+    #commentSection textarea {
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    #commentSection button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    #commentSection button:hover {
       background-color: #e65a4f;
     }
   </style>
@@ -92,6 +126,15 @@
         <button id="noButton">NO</button>
       </div>
 
+      <!-- Comment Box Section -->
+      <div id="commentSection">
+        <h3>Leave a Comment</h3>
+        <form id="commentForm" action="https://formspree.io/f/mwpkqzbg" method="POST">
+          <textarea name="comment" id="comment" rows="4" placeholder="Tell me how you feel here..." required></textarea><br/>
+          <button type="submit" id="submitButton">Send Comment</button>
+        </form>
+      </div>
+
     </div>
   </div>
 
@@ -134,6 +177,13 @@
     // NO button shows a popup with a message
     $("#noButton").click(function() {
       alert("I hoped and prayed this day would never come. But I know I still love you as crazy as the first day I talked to you. I love you, Tofunmi");
+    });
+
+    // Optional: Handling form submission with a success message
+    $("#commentForm").submit(function(event) {
+      event.preventDefault();
+      alert("Thank you for your words! It has been sent to my email.");
+      $("#comment").val(''); // Clear the text area
     });
   </script>
 </body>
