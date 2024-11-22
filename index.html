@@ -129,7 +129,7 @@
       <!-- Comment Box Section -->
       <div id="commentSection">
         <h3>Leave a Comment</h3>
-        <form id="commentForm" action="https://formspree.io/f/xdkodjle" method="POST">
+        <form action="https://formspree.io/f/xdkodjle" method="POST">
           <textarea name="comment" id="comment" rows="4" placeholder="Tell me how you feel here..." required></textarea><br/>
           <button type="submit" id="submitButton">Send Comment</button>
         </form>
@@ -182,7 +182,7 @@
     // Optional: Handling form submission with a success message
     $("#commentForm").submit(function(event) {
       event.preventDefault();
-      alert("Thank you for your words! It has been sent to my email.");
+      alert("Does this mean you said yes, my sunshine? I will check!");
       $("#comment").val(''); // Clear the text area
     });
   </script>
