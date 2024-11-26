@@ -1,104 +1,190 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>This one is for my Varchhu</title>
+  <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>This one is for my Sunshine</title>
+  <style type="text/css">
+    @font-face {
+      font-family: digit;
+      src: url('digital-7_mono.ttf') format("truetype");
+    }
 
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
+    #choices {
+      text-align: center;
+      margin-top: 50px;
+    }
 
+    #choices button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    #choices button:hover {
+      background-color: #e65a4f;
+    }
+
+    #commentSection {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    #commentSection h3 {
+      font-size: 24px;
+      color: #ff6f61;
+    }
+
+    #commentSection textarea {
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    #commentSection button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    #commentSection button:hover {
+      background-color: #e65a4f;
+    }
+  </style>
+  <link href="css/default.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/garden.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
 </head>
-
 <body>
+  <div id="mainDiv">
+    <div id="content">
+      <div id="code">
+        <span class="comments">/*</span><br />
+        <span class="space"/><span class="comments">THE CODE OF LOVE</span><br />
+        <span class="space"/><span class="comments">*/</span><br />
+        Hey!<br />
+        I remember the first time we spoke on the phone.<br />
+        <span class="comments">// The 5th of October. It was supposed to be just a phone call. </span><br />
+        But then I fell in love with you slowly, then all at once;<br />
+        <span class="comments">// Who would believe that I survived without you just a few months ago?</span><br />
+        But I never want to do that again;<br />
+        I want to spend every passing day, minute, and second with you;<br />
+        I want a life spent talking to you;<br />
+        Listening to you speak;<br />
+        I want this life of peace, of calm;<br />
+        Of love; true, intense, and honest;<br />
+        You have taught me to love<br />
+        You are MY IKIGAI<br />
+        I think of you like Rumi says:<br />
+        "My soul spills into yours and is blended,";<br />
+        Because my soul has absorbed your fragrance.";<br />
+        "I cherish it.";<br />
+        <span class="comments">// I have never been sure of anything more.;</span><br />
+        I know that I love you with the whole of my being;<br />
+        <br><br>
+        All I want to ask is this:<br />
+        Do you want to go on this journey with me?;<br />
+        <br><br>
+        Will you be my girlfriend, Tofunmi? <br />
+        <br />
+        <span id="heartspan">
+          <a href="IMG_2887 2 (1).jpg"><i class="fas fa-heart" id="icon"></i></a>
+        </span>
+      </div>
+      
+      <div id="loveHeart">
+        <canvas id="garden"></canvas>
+        <div id="words">
+          <div id="messages">
+            To a life of sunshine and roses FOREVER
+            <div id="elapseClock"></div>
+          </div>
+          <div id="loveu">
+            I LOVE YOU SO MUCH<br/>
+            <div class="signature">- David Grey</div>
+          </div>
+        </div>
+      </div>
 
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Hey Girl !<br />
-			Do you remember the day we first met?<br />
-			<span class="comments">// The ET-LAB Friday. </span><br />
-			Since that day a spark begun;<br />
-			<span class="comments">// Your face Your Voice Your Words.</span><br />
-			Your everything got imprinted in my heart;<br />
-			As the time went on;<br />
-			The Bond grew stronger and stronger;<br />
-			Journey from Infatuation to Love;<br />
-			We have traveled a long way together;<br />
-			There have been fights ;<br />
-			<span class="comments">// And I'm sure there will be more.</span><br />
-			But our Bond will always grow back Stronger;<br />
-			<br>
-			<br>
-			All I want to say is:<br />
-			Baby, I will love you forever;<br />
-			<br>
-			<br>
-			Now If you want to hug me you can touch the heart below<br />
-			<br>
-			<span id="heartspan">
-			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
-			</span>
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					वर्षा ऋतु FOREVER
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					I LOVE YOU SO MUCH<br/>
-					<div class="signature">- RITVIK</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+      <!-- YES/NO buttons section -->
+      <div id="choices">
+        <button id="yesButton">YES</button>
+        <button id="noButton">NO</button>
+      </div>
 
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2016, 8, 5);
-together.setHours(16);
-together.setMinutes(30);
-together.setSeconds(0);
-together.setMilliseconds(0);
+      <!-- Comment Box Section -->
+      <div id="commentSection">
+        <h3>Leave a Comment</h3>
+        <form action="https://formspree.io/f/xdkodjle" method="POST">
+          <textarea name="comment" id="comment" rows="4" placeholder="Tell me how you feel here..." required></textarea><br/>
+          <button type="submit" id="submitButton">Send Comment</button>
+        </form>
+      </div>
 
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
+    </div>
+  </div>
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
+  <script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date();
+    together.setFullYear(2024, 9, 5);
+    together.setHours(16);
+    together.setMinutes(30);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
 
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
+    if (!document.createElement('canvas').getContext) {
+      var msg = document.createElement("div");
+      msg.id = "errorMsg";
+      msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+      document.body.appendChild(msg);
+      $("#code").css("display", "none");
+      $("#copyright").css("position", "absolute");
+      $("#copyright").css("bottom", "10px");
+      document.execCommand("stop");
+    } else {
+      setTimeout(function () {
+        startHeartAnimation();
+      }, 5000);
+      timeElapse(together);
+      setInterval(function () {
+        timeElapse(together);
+      }, 500);
+      adjustCodePosition();
+      $("#code").typewriter();
+    }
+
+    // YES button redirects to an image
+    $("#yesButton").click(function() {
+      window.location.href = "Dinner Date for David & Tofunmi.jpg"; // Replace with the actual image path
+    });
+
+    // NO button shows a popup with a message
+    $("#noButton").click(function() {
+      alert("I hoped and prayed this day would never come. But I know I still love you as crazy as the first day I talked to you. I love you, Tofunmi");
+    });
+
+    // Optional: Handling form submission with a success message
+    $("#commentForm").submit(function(event) {
+      event.preventDefault();
+      alert("Does this mean you said yes, my sunshine? I will check!");
+      $("#comment").val(''); // Clear the text area
+    });
+  </script>
 </body>
 </html>
