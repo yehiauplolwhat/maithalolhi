@@ -1,1 +1,1 @@
-git@github.com:Sahilrout21/LoveProject.git
+Sahilrout21/LoveProject.git
