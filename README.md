@@ -4,4 +4,4 @@ A simple static webpage as a gift for my girlfriend . Although a personal projec
 You can check this out with 
 
 <br>
-Link: link here
+Link: https://ergophobiac1.github.io/staticWebsiteCSS/
